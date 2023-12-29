@@ -1,0 +1,42 @@
+.clothes .cloth {
+    background-color: white;
+    margin: 30px;
+    margin-bottom: 70px;
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 5px;
+    color: #adaeb9;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+    .clothes .cloth a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+.cloth .img {
+    position: relative;
+    top: -50px;
+    max-width: 150px;
+    width: 100%;
+    margin-right: 30px;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.cloth .cloth_title {
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #2c2c2c;
+}
+
+.cloth .cloth_lprice {
+    margin: 0;
+    font-weight: 300;
+}
+
+.cloth .cloth_link {
+    text-decoration: none;
+    color: #2c2c2c;
+}
