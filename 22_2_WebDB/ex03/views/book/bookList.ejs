@@ -1,0 +1,24 @@
+<h1>Books</h1>
+<table class="table table-sm table-bordered" style="width: 600px">
+    <%
+    var i=0;
+    while(i < results.length){
+    %>
+
+    <tr>
+        <td class="td td-sm"><%=results[i].name%></td>
+        <td><%=results[i].img%></td>
+        <td><%=results[i].author%></td>
+        <td><%=results[i].price%></td>
+        <td><%=results[i].e_book%></td>
+        <% if(kindOfDoc == 'L') { %>
+        <td><a href="/book/update/<%=results[i].id%>">update</a></td>
+        <td><a href="/book/delete_process/<%=results[i].id%>">delete</a></td>
+        <% } %>
+    </tr>
+
+    <%
+    i++;
+    }
+    %>
+</table>

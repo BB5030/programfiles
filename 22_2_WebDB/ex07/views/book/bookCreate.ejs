@@ -1,0 +1,20 @@
+<% if (kindOfDoc == 'C') { %>
+<h1>Book 생성</h1>
+<form action="/book/create_process" method="post">
+<% } else { %>
+<h1>Book 편집</h1>
+<form action="/book/update_process/<%=bId%>" method="post">
+<% } %>
+<p>이름: </p>
+<p><input type="text" name="name" value="<%=name%>" style = " width : 400px; border-color:antiquewhite;" placeholder="name"></p>
+<p>이미지 링크:</p>
+<p><input type="text" name="img" value="<%=img%>" style = " width : 400px; border-color:antiquewhite;" placeholder="image_link"></p>
+<p>저자:</p>
+<p><input type="text" name="author" value="<%=author%>" style = " width : 400px; border-color:antiquewhite;" placeholder="author"></p>
+<p>가격:</p>
+<p><input type="text" name="price" value="<%=price%>" style = " width : 400px; border-color:antiquewhite;" placeholder="price"></p>
+<p>e-book 여부:</p>
+<p><input type="text" name="e_book" value="<%=e_book%>" style = " width : 400px; border-color:antiquewhite;" placeholder="e_book"></p>
+<p>by <%=id%></p>
+<p><input type="submit"></p>
+</form>

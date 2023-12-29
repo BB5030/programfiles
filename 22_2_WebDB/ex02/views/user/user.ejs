@@ -1,0 +1,16 @@
+<h1>Users</h1>
+<table class="table table-sm table-bordered" style="width : 600px">
+    <%
+        var i = 0;
+        while(i < results.length){
+    %>
+        <tr>
+            <td class="td td-sm">id : <%=results[i].loginid%></td>
+            <td>password : <%=results[i].password%></td>
+            <td>class : <%=results[i].cls%></td>
+        </tr>
+    <%
+        i++;
+        }
+    %>
+</table>

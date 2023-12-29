@@ -1,0 +1,32 @@
+<h1><%=id%>님, 구매해주셔서 감사합니다</h1>
+<form>
+    <table class="table table-sm table-bordered" style="width: 600px">
+        <tr>
+            <td>구매한 책</td>
+            <td>총 금액</td>
+            <td>포인트</td>
+            <td>구매 날짜</td>
+            <td>취소하기</td>
+        </tr>
+        <%
+        var i=0;
+        var tPrice=0;
+        var tPoint=0;
+        while(i < results.length){
+            tPrice = tPrice + results[i].price;
+            tPoint = tPoint + results[i].point;
+        %>
+        <tr>
+            <td class="td td-sm"><%=results[i].name%></td>
+            <td><%=results[i].price%></td>
+            <td><%=results[i].point%></td>
+            <td><%=results[i].purchasedate%></td>
+            <td>
+                <button type="submit" formaction = "/cancel_process/<%=results[i].purchaseid%>" formmethod="post">주문 취소</button>
+            </td>
+        </tr>
+        <% i++; } %>
+    </table>
+    <h2>총 구매 금액: <%=tPrice%>원</h2>
+    <h2>사용 가능한 포인트: <%=tPoint%>p</h2>
+</form>

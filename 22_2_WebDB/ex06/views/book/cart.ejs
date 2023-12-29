@@ -1,0 +1,14 @@
+<h1>Cart</h1>
+<form action="/purchase_process/<%=bookId%>" method="post">
+<p>이름:</p>
+<p><input type="text" name="name" value="<%=name%>" style = " width : 400px; border-color:antiquewhite;" placeholder="name" readonly="readonly"></p>
+<p>저자:</p>
+<p><input type="text" name="author" value="<%=author%>" style = " width : 400px; border-color:antiquewhite;" placeholder="author" readonly="readonly"></p>
+<p>가격:</p>
+<p><input type="text" name="price" value="<%=price * qty%>" style = " width : 400px; border-color:antiquewhite;" placeholder="price" readonly="readonly"></p>
+<p>수량:</p>
+<p><input type="text" name="qty" value="<%=qty%>" style = " width : 400px; border-color:antiquewhite;"></p>
+<p>by <%=id%></p>
+<p><input type="hidden" value="<%=bookId%>"></p>
+<p><input type="submit" value="구매하기"/></p>
+</form>

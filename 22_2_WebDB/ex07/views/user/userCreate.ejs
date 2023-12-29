@@ -1,0 +1,25 @@
+<% if (kindOfDoc == 'C') { %>
+<h1>User Create</h1>
+<form action="/user/create_process" method="post">
+<% } else { %>
+<h1>User Update</h1>
+<form action="/user/update_process/<%=pId%>" method="post">
+<% } %>
+<p>
+    <input type="text" name="loginid" value="<%=loginid%>" style = " width : 400px; border-color:antiquewhite;" placeholder="id">
+</p>
+<p>
+    <input type="text" name="password" value="<%=password%>" style = " width : 400px; border-color:antiquewhite;" placeholder="password">
+</p>
+<p>
+    <input type="text" name="name" value="<%=name%>" style = " width : 400px; border-color:antiquewhite;" placeholder="name">
+</p>
+<p>
+    <input type="text" name="cls" value="<%=cls%>" style = " width : 400px; border-color:antiquewhite;" placeholder="class">
+</p>
+<p>
+    <input type="text" name="grade" value="<%=grade%>" style = " width : 400px; border-color:antiquewhite;" placeholder="grade">
+</p>
+<p>by <%=id%></p>
+<p><input type="submit"></p>
+</form>
